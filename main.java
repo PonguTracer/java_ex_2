@@ -3,21 +3,24 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
-        /* Type your code here. */
-        int startingNum = scnr.nextInt();
-        int multiplier = scnr.nextInt();
-        int result = startingNum;
-        String output = "";
+        int startingNum, multiplier;
 
-        for (int i = 0; i < 3; i++) {
-            result *= multiplier;
-            if (i <=1){
-                output += result + " ";
-            }
-            else {
-                output += result;
-            }
-        }
-        System.out.println(output);
+        // Read the inputs
+        startingNum = scnr.nextInt();
+        multiplier = scnr.nextInt();
+
+        // First multiplication and output
+        startingNum *= multiplier;
+        System.out.print(startingNum + " ");
+
+        // Second multiplication and output
+        startingNum *= multiplier;
+        System.out.print(startingNum + " ");
+
+        // Third multiplication and output
+        startingNum *= multiplier;
+        System.out.println(startingNum);
+
+
     }
 }
